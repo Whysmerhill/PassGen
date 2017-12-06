@@ -1,6 +1,7 @@
 #!/usr/bin/env python3.4
 # -*- coding: utf-8 -*-
 import random
+from math import log
 
 r = random.SystemRandom()
 nb_words=6
@@ -18,10 +19,4 @@ for i in range(0,nb_words):
 	passp += words[word_pos] + separator
 
 print(passp)
-print(len(words))
-
-#
-#s = "some string"
-#print(r.choice(s)) # print random character from the string
-#print(s[r.randrange(len(s))]) # same
-
+print(log(len(words),2))
